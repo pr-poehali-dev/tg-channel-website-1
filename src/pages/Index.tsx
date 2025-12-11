@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
+import TelegramWidget from '@/components/TelegramWidget';
 
 interface Comment {
   id: number;
@@ -225,6 +226,16 @@ const Index = () => {
               Актуальное
             </Badge>
           </div>
+
+          <Card className="mb-8 p-6 bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20 animate-fade-in">
+            <div className="flex items-center gap-3 mb-4">
+              <Icon name="Send" size={24} className="text-primary" />
+              <h3 className="text-2xl font-bold">Прямой эфир из Telegram</h3>
+            </div>
+            <div className="bg-white rounded-lg overflow-hidden">
+              <TelegramWidget channelUsername="scriptsforcheats" width="100%" />
+            </div>
+          </Card>
 
           <div className="space-y-8">
             {posts.map((post, index) => (
