@@ -177,7 +177,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 rounded-full shadow-2xl hover:scale-105 transition-all"
-                onClick={() => window.open('https://t.me/', '_blank')}
+                onClick={() => window.open('https://t.me/scriptsforcheats', '_blank')}
               >
                 <Icon name="Send" size={20} className="mr-2" />
                 Подписаться в Telegram
